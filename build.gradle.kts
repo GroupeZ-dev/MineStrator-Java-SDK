@@ -18,8 +18,9 @@ extra.set("classifier", System.getProperty("archive.classifier"))
 extra.set("sha", System.getProperty("github.sha"))
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
 
     withJavadocJar()
     withSourcesJar()
