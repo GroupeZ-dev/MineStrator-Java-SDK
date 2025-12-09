@@ -26,18 +26,27 @@ This SDK focuses on **developer experience**:
 ### Gradle
 
 ```gradle
-dependencies {
-    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.1")
+maven {
+    name = "groupezReleases"
+    url = uri("https://repo.groupez.dev/releases")
 }
+
+implementation("fr.maxlego08.minestrator:minestratorapi:{version}")
 ```
 
 ### Maven
 
 ```xml
+<repository>
+    <id>groupez-releases</id>
+    <name>GroupeZ Repository</name>
+    <url>https://repo.groupez.dev/releases</url>
+</repository>
+
 <dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>2.17.1</version>
+    <groupId>fr.maxlego08.minestrator</groupId>
+    <artifactId>minestratorapi</artifactId>
+    <version>{version}</version>
 </dependency>
 ```
 

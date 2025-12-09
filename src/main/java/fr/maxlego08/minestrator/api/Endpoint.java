@@ -14,6 +14,8 @@ public enum Endpoint {
 
     GET_SERVER_LIVE("/server/{serverId}/live", HttpMethod.GET, false, true),
 
+    GET_MYBOX("/mybox/{myboxId}", HttpMethod.GET, false, true),
+
     SERVER_POWER_ACTION("/server/{serverId}/poweraction", HttpMethod.PUT, true, true);
 
     private final String pathTemplate;
