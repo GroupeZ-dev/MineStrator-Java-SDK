@@ -8,6 +8,6 @@ import java.util.List;
 public record PlayersStats(
         Integer current,
         Integer limit,
-        List<Object> list
+        List<String> list
 ) {
 }

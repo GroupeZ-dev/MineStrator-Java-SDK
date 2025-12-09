@@ -4,8 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record ServerLiveData(
-        String state,
+        ServerState state,
         String status,
         LiveStats stats
 ) {
 }
+
